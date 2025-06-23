@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Académico - Adolfo Caballero</title>
+  <style>
+    @keyframes pixelGlow {
+      0% { filter: drop-shadow(0 0 1px #0f0); }
+      50% { filter: drop-shadow(0 0 6px #0f0); }
+      100% { filter: drop-shadow(0 0 1px #0f0); }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      background-image: url('https://i.imgur.com/jGzXK9z.png');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #0f0;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      animation: pixelGlow 2s infinite;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+
+    nav {
+      background-color: #000a;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #0f0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 2px solid #0f0;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #000a;
+      padding: 10px;
+      font-size: 0.8em;
+      color: #9f9;
+    }
+
+    .voxel {
+      width: 100px;
+      margin: 20px auto;
+      animation: pixelGlow 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ADOLFO CABALLERO</h1>
+    <p>Academic Portfolio</p>
+    <img src="/mnt/data/A_2D_digital_webpage_screenshot_displays_an_academ.png" alt="Voxel Character" class="voxel">
+  </header>
+  <nav>
+    <a href="#materias">Materias</a>
+    <a href="#descargas">Descargas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section id="materias" class="container">
+    <div class="card">
+      <h3>Derecho Constitucional</h3>
+      <p>Resumen de artículos, evolución de la Constitución Mexicana y apuntes personales.</p>
+    </div>
+    <div class="card">
+      <h3>Macroeconomía</h3>
+      <p>Modelos clásicos, oferta y demanda agregada, funciones de producción y salario real.</p>
+    </div>
+  </section>
+  <section id="descargas" class="container">
+    <div class="card">
+      <h3>Descargas</h3>
+      <ul>
+        <li><a href="#">📄 Derecho Constitucional.pdf</a></li>
+        <li><a href="#">📄 Macroeconomía Clásica.pdf</a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="contacto" class="container">
+    <div class="card">
+      <h3>Contacto</h3>
+      <p>Correo: <strong>adolfo@email.com</strong></p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Adolfo Caballero | Proyecto académico estilo voxel postapocalíptico
+  </footer>
+</body>
+</html>
